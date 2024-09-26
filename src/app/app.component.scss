@@ -1,0 +1,13 @@
+ion-toolbar {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+  }
+  
+  .main-title, .sub-title {
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+    text-align: center; /* Alinea el texto al centro */
+    display: block; /* Trata los títulos como bloques para un control más fácil */
+  }
+  

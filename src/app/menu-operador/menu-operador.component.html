@@ -1,0 +1,50 @@
+<header>
+  <h1 style="text-align: center;">Stock de Productos (Editable)</h1>
+</header>
+
+<main>
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+      <tr>
+        <th style="padding: 8px;">Código</th>
+        <th style="padding: 8px;">Descripción</th>
+        <th style="padding: 8px;">Precio</th>
+        <th style="padding: 8px;">Ubicación</th>
+        <th style="padding: 8px;">Ventas por día</th> <!-- Nueva columna -->
+        <th style="padding: 8px;">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px;"><input type="text" value="001"></td>
+        <td style="padding: 8px;"><input type="text" value="Producto A"></td>
+        <td style="padding: 8px;"><input type="text" value="$10.00"></td>
+        <td style="padding: 8px;"><input type="text" value="S-10-7"></td>
+        <td style="padding: 8px;"><input type="text" value="5"></td> <!-- Campo Ventas por día -->
+        <td style="padding: 8px;">
+          <button style="padding: 5px 10px;" (click)="updateProduct(1)">Actualizar</button>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;"><input type="text" value="002"></td>
+        <td style="padding: 8px;"><input type="text" value="Producto B"></td>
+        <td style="padding: 8px;"><input type="text" value="$15.00"></td>
+        <td style="padding: 8px;"><input type="text" value="P-15-3"></td>
+        <td style="padding: 8px;"><input type="text" value="10"></td> <!-- Campo Ventas por día -->
+        <td style="padding: 8px;">
+          <button style="padding: 5px 10px;" (click)="updateProduct(2)">Actualizar</button>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;"><input type="text" value="003"></td>
+        <td style="padding: 8px;"><input type="text" value="Producto C"></td>
+        <td style="padding: 8px;"><input type="text" value="$20.00"></td>
+        <td style="padding: 8px;"><input type="text" value="R-8-5"></td>
+        <td style="padding: 8px;"><input type="text" value="8"></td> <!-- Campo Ventas por día -->
+        <td style="padding: 8px;">
+          <button style="padding: 5px 10px;" (click)="updateProduct(3)">Actualizar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>

@@ -1,0 +1,51 @@
+<header>
+  <h1 style="text-align: center;">Horario de Jefatura (Editable)</h1>
+</header>
+
+<main>
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+      <tr>
+        <th style="padding: 8px;">Día</th>
+        <th style="padding: 8px;">Fecha</th>
+        <th style="padding: 8px;">Trabajador</th> <!-- Nuevo campo -->
+        <th style="padding: 8px;">Horario</th>
+        <th style="padding: 8px;">Hora de colación</th> <!-- Nuevo campo -->
+        <th style="padding: 8px;">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px;">Lunes</td>
+        <td style="padding: 8px;">01/10/2024</td>
+        <td style="padding: 8px;"><input type="text" value="Juan Pérez"></td> <!-- Campo Trabajador -->
+        <td style="padding: 8px;"><input type="text" value="08:00 - 13:00"></td> <!-- Campo Horario -->
+        <td style="padding: 8px;"><input type="text" value="11:00 - 11:30"></td> <!-- Campo Hora de colación -->
+        <td style="padding: 8px;">
+          <button style="padding: 5px 10px;" (click)="updateSchedule(1)">Actualizar</button>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;">Martes</td>
+        <td style="padding: 8px;">02/10/2024</td>
+        <td style="padding: 8px;"><input type="text" value="Ana López"></td> <!-- Campo Trabajador -->
+        <td style="padding: 8px;"><input type="text" value="09:00 - 14:00"></td> <!-- Campo Horario -->
+        <td style="padding: 8px;"><input type="text" value="12:00 - 12:30"></td> <!-- Campo Hora de colación -->
+        <td style="padding: 8px;">
+          <button style="padding: 5px 10px;" (click)="updateSchedule(2)">Actualizar</button>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;">Miércoles</td>
+        <td style="padding: 8px;">03/10/2024</td>
+        <td style="padding: 8px;"><input type="text" value="Carlos Gómez"></td> <!-- Campo Trabajador -->
+        <td style="padding: 8px;"><input type="text" value="10:00 - 15:00"></td> <!-- Campo Horario -->
+        <td style="padding: 8px;"><input type="text" value="13:00 - 13:30"></td> <!-- Campo Hora de colación -->
+        <td style="padding: 8px;">
+          <button style="padding: 5px 10px;" (click)="updateSchedule(3)">Actualizar</button>
+        </td>
+      </tr>
+      <!-- Añade más filas según sea necesario -->
+    </tbody>
+  </table>
+</main>

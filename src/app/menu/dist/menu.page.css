@@ -1,0 +1,4 @@
+/* menu.page.scss */
+:host {
+  --background: #ffffff;
+}

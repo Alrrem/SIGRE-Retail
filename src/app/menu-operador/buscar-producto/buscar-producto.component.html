@@ -1,0 +1,42 @@
+<header>
+  <h1 style="text-align: center;">Menú Operador</h1>
+</header>
+
+<main>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <!-- Enlace al horario -->
+    <button style="padding: 10px 20px; margin: 10px;" routerLink="/menu-operador/horario">Ver Horario</button>
+
+    <!-- Enlace a la lista de productos -->
+    <button style="padding: 10px 20px; margin: 10px;" routerLink="/menu-operador/buscar-producto">Ver Productos</button>
+  </div>
+
+  <!-- Tabla editable para productos -->
+  <h2 style="text-align: center; margin-top: 20px;">Lista de Productos (Editable)</h2>
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 20px;">
+    <thead>
+      <tr>
+        <th style="padding: 8px;">Código</th>
+        <th style="padding: 8px;">Descripción</th>
+        <th style="padding: 8px;">Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px;"><input type="text" value="001"></td>
+        <td style="padding: 8px;"><input type="text" value="Producto A"></td>
+        <td style="padding: 8px;"><input type="text" value="$10.00"></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;"><input type="text" value="002"></td>
+        <td style="padding: 8px;"><input type="text" value="Producto B"></td>
+        <td style="padding: 8px;"><input type="text" value="$15.00"></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;"><input type="text" value="003"></td>
+        <td style="padding: 8px;"><input type="text" value="Producto C"></td>
+        <td style="padding: 8px;"><input type="text" value="$20.00"></td>
+      </tr>
+    </tbody>
+  </table>
+</main>

@@ -1,3 +1,42 @@
+<!-- app.component.html -->
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main-content" side="start" menuId="first">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item routerLink="/welcome">
+            <ion-icon slot="start" name="home"></ion-icon>
+            <ion-label>Bienvenido</ion-label>
+          </ion-item>
+          <ion-item routerLink="/login">
+            <ion-icon slot="start" name="log-in"></ion-icon>
+            <ion-label>Iniciar Sesión</ion-label>
+          </ion-item>
+          <ion-item routerLink="/register">
+            <ion-icon slot="start" name="person-add"></ion-icon>
+            <ion-label>Registrar Usuario</ion-label>
+          </ion-item>
+          <!-- Opción de Perfil de Usuario eliminada -->
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="main-title">Sistema Integral de Gestión de Recursos para Optimizar el Personal y el Stock en Retail</ion-title>
+        <ion-title class="sub-title">SIGRE-Retail</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-router-outlet></ion-router-outlet>
+  </div>
 </ion-app>
